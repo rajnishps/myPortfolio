@@ -18,11 +18,12 @@ export default function Home() {
       <Head>
         <title> RPS Builds</title>
         <meta name="RPS" content="Portfolio of Rajnish Pratap Singh" />
+<meta name=”description” content=”portfolio for my career in frontend” />
         <link rel="icon" href="./favicon.png" />
       </Head>
       <main className=" bg-white px-10 dark:bg-black md:px-20 lg:px-40">
         <section className="min-h-screen">
-<meta name=”description” content=”portfolio for my career in frontend” />
+
           <nav className="py-8 mb-6 flex justify-between dark:text-white">
             <h1 className="font-poppins font-bold text-2xl tracking-widest ">
               RPS
