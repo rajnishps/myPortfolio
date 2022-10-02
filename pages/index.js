@@ -35,6 +35,7 @@ export default function Home() {
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
                   href="https://docs.google.com/document/d/1NkYM-V6U0sKGWtsxGsUq3_6L5lM4YjzxdPUpn9M3v30/edit?usp=sharing"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Resume
@@ -50,22 +51,39 @@ export default function Home() {
               FrontEnd Developer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
+              Enthusiast for development of the Web. Always looking for a new
+              opportunity to push myself to the very Next Level.
             </p>
             <div className=" text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400 ">
-              <a href="https://github.com/rajnishps" target="_blank">
+              <a
+                href="https://github.com/rajnishps"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <AiFillGithub />
               </a>
-              <a href="https://twitter.com/boxRPS" target="_blank">
+              <a
+                href="https://twitter.com/boxRPS"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <AiFillTwitterCircle />
               </a>
-              <a href="https://www.linkedin.com/in/rajnishps/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/rajnishps/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <AiFillLinkedin />
               </a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={Char} layout="fill" objectFit="cover" />
+              <Image
+                src={Char}
+                alt="3D imitation of myself"
+                layout="fill"
+                objectFit="cover"
+              />
             </div>
           </div>
         </section>
