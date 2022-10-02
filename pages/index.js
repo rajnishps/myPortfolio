@@ -44,7 +44,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 py-5">
-            <h2 className="text-4xl px-10 py-4 text-teal-600 font-medium dark:text-teal-400  uppercase md:text-6xl">
+            <h2 className="text-4xl px-20 py-4 text-teal-600 font-medium dark:text-teal-400  uppercase md:text-6xl md:px-0">
               Rajnish Pratap Singh
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
