@@ -1,5 +1,4 @@
 import Head from "next/head"
-import Html from "next/html"
 import Image from "next/image"
 import { useState } from "react"
 import { BsFillMoonStarsFill } from "react-icons/bs"
@@ -16,7 +15,6 @@ export default function Home() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <Html lang="en" />
       <Head>
         <title> RPS Builds</title>
         <meta name="RPS" content="Portfolio of Rajnish Pratap Singh" />
