@@ -17,6 +17,7 @@ export default function Home() {
     <div className={darkMode ? "dark" : ""}>
       <Head>
         <title> RPS Builds</title>
+        <meta name="google-site-verification" content="smlYPaCoj2jlkXd_U03v8YTLonbYC4a_r-FW5k1aMYQ" />
         <meta name="RPS" content="Portfolio of Rajnish Pratap Singh" />
         <meta
           name="description"
