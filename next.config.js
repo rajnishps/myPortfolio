@@ -24,6 +24,13 @@ module.exports = {
         destination: "https://www.linkedin.com/in/rajnishps/",
         permanent: true,
       },
+{
+        source: "/resume",
+        destination: "https://drive.google.com/file/d/1kWmM_amc-KKL3s9KpuGESNZmoZcpkw9I/view?usp=share_link",
+        permanent: true,
+      },
+
+
     ]
   },
 }
