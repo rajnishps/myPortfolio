@@ -41,7 +41,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="https://drive.google.com/file/d/1kWmM_amc-KKL3s9KpuGESNZmoZcpkw9I/view?usp=share_link"
+                  href="http://rajnishps.vercel.app/resume"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
