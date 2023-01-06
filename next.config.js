@@ -26,7 +26,7 @@ module.exports = {
       },
 {
         source: "/resume",
-        destination: "https://drive.google.com/file/d/1s7FK7Nw0HHijv54Z_pYqSxElAUaUNUlk/view?usp=sharing",
+        destination: "https://drive.google.com/file/d/1yKCFr0FWhpmsNGKpLTpUiqHw5yVR6YQQ/view?usp=sharing",
         permanent: true,
       },
 
