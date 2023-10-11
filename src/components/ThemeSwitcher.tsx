@@ -4,7 +4,7 @@
 import { Switch } from "@nextui-org/switch"
 import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
-
+import { SVGProps } from "react"
 export function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
@@ -13,7 +13,9 @@ export function ThemeSwitcher() {
     setMounted(true)
   }, [])
 
-  const MoonIcon = (props) => (
+  type TSVGElementProps = SVGProps<SVGSVGElement>
+
+  const MoonIcon = (props: TSVGElementProps) => (
     <svg
       aria-hidden="true"
       focusable="false"
@@ -30,7 +32,7 @@ export function ThemeSwitcher() {
     </svg>
   )
 
-  const SunIcon = (props) => (
+  const SunIcon = (props: TSVGElementProps) => (
     <svg
       aria-hidden="true"
       focusable="false"
