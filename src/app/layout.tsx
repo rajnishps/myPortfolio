@@ -1,6 +1,7 @@
 import "./globals.css"
 import type { Metadata } from "next"
 import { Inter, Roboto_Mono, JetBrains_Mono } from "next/font/google"
+import { Providers } from "./Providers"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,9 +36,11 @@ export default function RootLayout({
       className={`${inter.variable} ${roboto_mono.variable} ${jetbrains_mono.variable}`}
     >
       <body className=" font-title">
-        <h2 className=" font-primary">layout header Title</h2>
-        {children}
-        <h2 className=" font-sub">layout footer</h2>
+        <Providers>
+          <h2 className=" font-primary">layout header Title</h2>
+          {children}
+          <h2 className=" font-sub">layout footer</h2>
+        </Providers>
       </body>
     </html>
   )
