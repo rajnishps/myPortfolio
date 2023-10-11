@@ -1,7 +1,7 @@
 import "./globals.css"
 import type { Metadata } from "next"
 import { Inter, Roboto_Mono, JetBrains_Mono } from "next/font/google"
-import { Providers } from "./Providers"
+import { Providers } from "../Providers"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,8 +21,8 @@ const jetbrains_mono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Learn Next ",
-  description: "Bhagwan bharose",
+  title: "Hello World!",
+  description: "RPS ka code hai",
 }
 
 export default function RootLayout({
