@@ -2,11 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
-
-module.exports = nextConfig
-
-module.exports = {
+  images: {
+    domains: ["picsum.photos"],
+  },
   async redirects() {
     return [
       {
@@ -24,13 +22,14 @@ module.exports = {
         destination: "https://www.linkedin.com/in/rajnishps/",
         permanent: true,
       },
-{
+      {
         source: "/resume",
-        destination: "https://drive.google.com/file/d/1MM7GRzk2TiBVc4kG1Dic5F2IrOgyeUeH/view?usp=sharing",
+        destination:
+          "https://drive.google.com/file/d/1MM7GRzk2TiBVc4kG1Dic5F2IrOgyeUeH/view?usp=sharing",
         permanent: true,
       },
-
-
-    ]
+    ];
   },
-}
+};
+
+module.exports = nextConfig;
