@@ -177,27 +177,6 @@ const Contact: React.FC = () => {
           </Card>
         </motion.div>
       </div>
-
-      <footer className="border-t border-white/5 py-12 flex flex-col md:flex-row items-center justify-between gap-8">
-        <p className="text-gray-500 text-sm font-sans font-medium">
-          © {new Date().getFullYear()} RAJNISH Pratap Singh. All rights
-          reserved.
-        </p>
-        <div className="flex gap-10">
-          <a
-            href="#"
-            className="text-gray-500 hover:text-white text-xs font-bold font-sans uppercase tracking-[0.2em] transition-colors"
-          >
-            Privacy
-          </a>
-          <a
-            href="#"
-            className="text-gray-500 hover:text-white text-xs font-bold font-sans uppercase tracking-[0.2em] transition-colors"
-          >
-            Terms
-          </a>
-        </div>
-      </footer>
     </Section>
   );
 };
