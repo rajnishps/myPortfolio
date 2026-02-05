@@ -1,5 +1,5 @@
-import React, { ReactNode } from 'react';
-import { motion } from 'framer-motion';
+import React, { ReactNode } from "react";
+import { motion } from "framer-motion";
 
 interface SectionProps {
   children: ReactNode;
@@ -8,21 +8,20 @@ interface SectionProps {
   noPadding?: boolean;
 }
 
-const Section: React.FC<SectionProps> = ({ children, id, className = "", noPadding = false }) => {
+const Section: React.FC<SectionProps> = ({
+  children,
+  id,
+  className = "",
+  noPadding = false,
+}) => {
   return (
-    <section 
-      id={id} 
-      className={`relative w-full ${!noPadding ? 'py-20 md:py-32' : ''} ${className}`}
+    <section
+      id={id}
+      className={`relative w-full ${!noPadding ? "py-20 md:py-32" : ""} ${className}`}
     >
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="container mx-auto px-6 md:px-12 relative z-10"
-      >
+      <div className="container mx-auto px-6 md:px-12 relative z-10">
         {children}
-      </motion.div>
+      </div>
     </section>
   );
 };

@@ -10,9 +10,9 @@ const About: React.FC = () => {
       <div className="grid md:grid-cols-2 gap-20 lg:gap-32 items-center">
         <div className="relative">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            initial={{ x: -50 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
             className="relative z-10 rounded-[2.5rem] overflow-hidden aspect-[4/5] max-w-md mx-auto md:mx-0 border border-white/10 shadow-3xl"
           >
@@ -33,9 +33,9 @@ const About: React.FC = () => {
 
         <div className="space-y-12">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            initial={{ y: 30 }}
+            whileInView={{ y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-7xl font-display font-extrabold text-white mb-8 tracking-tight leading-[1.1]">
@@ -55,9 +55,9 @@ const About: React.FC = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            initial={{ y: 30 }}
+            whileInView={{ y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             viewport={{ once: true }}
             className="grid grid-cols-2 gap-8 pt-8 border-t border-white/5"
           >

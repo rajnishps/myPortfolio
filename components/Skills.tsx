@@ -21,12 +21,12 @@ const Skills: React.FC = () => {
         {SKILLS.map((category, idx) => (
           <motion.div
             key={category.title}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ y: 20 }}
+            whileInView={{ y: 0 }}
             transition={{
               delay: idx * 0.1,
               duration: 0.6,
-              ease: [0.16, 1, 0.3, 1],
+              ease: "easeOut",
             }}
             viewport={{ once: true }}
           >

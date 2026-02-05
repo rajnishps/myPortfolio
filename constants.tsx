@@ -95,7 +95,7 @@ export const PROJECTS: Project[] = [
     description:
       "Cross-platform fintech mobile app for wallets, card lifecycle management, and real-time transactions with biometric auth.",
     techStack: ["React Native", "TypeScript", "Zustand", "TanStack Query"],
-    imageUrl: "/fypto.png",
+    imageUrl: "/fypto.jpg",
     repoUrl: "#",
     liveUrl: "#",
     featured: true,
@@ -117,7 +117,7 @@ export const PROJECTS: Project[] = [
     description:
       "Multi-tenant backend for branded platforms with tenant-level business logic and automated fee/commission engines.",
     techStack: ["NestJS", "Prisma", "GraphQL", "Next.js"],
-    imageUrl: "/whitelabel.png",
+    imageUrl: "/whitelabel.jpg",
     repoUrl: "#",
     liveUrl: "#",
   },
@@ -127,7 +127,7 @@ export const PROJECTS: Project[] = [
     description:
       "High-performance dashboards for KYC approvals and financial monitoring with server-side pagination.",
     techStack: ["Next.js", "GraphQL", "TanStack Table"],
-    imageUrl: "/dashboard.png",
+    imageUrl: "/dashboard.jpg",
     repoUrl: "#",
     liveUrl: "#",
   },

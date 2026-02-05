@@ -17,8 +17,8 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center md:text-left">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 20 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex items-center justify-center md:justify-start gap-2 mb-6"
           >
@@ -29,9 +29,9 @@ const Hero: React.FC = () => {
           </motion.div>
 
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+            initial={{ y: 30 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             className="text-6xl md:text-8xl font-display font-extrabold text-white leading-[1.1] mb-8 tracking-tight"
           >
             Full-Stack Architect <br />
@@ -41,18 +41,18 @@ const Hero: React.FC = () => {
           </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            initial={{ y: 30 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
             className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto md:mx-0 leading-relaxed font-sans"
           >
             {HERO_CONTENT.subheadline}
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            initial={{ y: 30 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
             className="flex flex-col sm:flex-row items-center gap-5 justify-center md:justify-start"
           >
             <a

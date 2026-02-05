@@ -41,9 +41,9 @@ const Contact: React.FC = () => {
     <Section id="contact" className="pb-0 py-24 md:py-32">
       <div className="grid lg:grid-cols-2 gap-20 lg:gap-32 mb-32 items-start">
         <motion.div
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          initial={{ x: -30 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
           <h2 className="text-5xl md:text-8xl font-display font-extrabold text-white mb-10 tracking-tight leading-[1.05]">
@@ -92,10 +92,10 @@ const Contact: React.FC = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ scale: 0.95 }}
+          whileInView={{ scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
           <Card className="p-4 bg-transparent border-0" hoverEffect={false}>
             <form

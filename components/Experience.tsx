@@ -27,12 +27,12 @@ const Experience: React.FC = () => {
           {EXPERIENCE.map((exp, index) => (
             <motion.div
               key={exp.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ y: 30 }}
+              whileInView={{ y: 0 }}
               transition={{
                 duration: 0.8,
                 delay: index * 0.1,
-                ease: [0.16, 1, 0.3, 1],
+                ease: "easeOut",
               }}
               viewport={{ once: true }}
               className={`relative flex flex-col md:flex-row gap-12 ${
