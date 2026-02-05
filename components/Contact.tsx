@@ -128,18 +128,7 @@ const Contact: React.FC = () => {
                   />
                 </div>
               </div>
-              <div className="space-y-3">
-                <label className="text-sm font-bold text-gray-400 font-sans tracking-wide">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  name="subject"
-                  required
-                  className="w-full bg-white/[0.03] border border-white/10 rounded-[1rem] px-6 py-5 text-white focus:outline-none focus:border-primary/50 transition-all duration-300 font-sans"
-                  placeholder="Project Inquiry"
-                />
-              </div>
+
               <div className="space-y-3">
                 <label className="text-sm font-bold text-gray-400 font-sans tracking-wide">
                   Message
