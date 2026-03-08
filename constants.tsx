@@ -1,6 +1,6 @@
-import React from "react";
-import { Project, Experience, SkillCategory, NavItem } from "./types";
-import { Layers, Database, Server, Cpu, Smartphone } from "lucide-react";
+import React from "react"
+import { Project, Experience, SkillCategory, NavItem } from "./types"
+import { Layers, Database, Server, Cpu, Smartphone } from "lucide-react"
 
 export const NAV_ITEMS: NavItem[] = [
   { label: "About", href: "#about" },
@@ -8,23 +8,24 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
-];
+  { label: "Blog", href: "https://blog.rajnish.tech" },
+]
 
 export const CONTACT_INFO = {
   email: "work@rajnish.tech",
   linkedin: "https://www.linkedin.com/in/rajnishps/",
   github: "https://github.com/rajnishps/",
   location: "India / Remote",
-};
+}
 
 export const HERO_CONTENT = {
   greeting: "Hello, I'm Rajnish.",
   headline: "Full-Stack & Mobile Engineer building scalable fintech systems.",
   subheadline:
     "Specializing in React Native, Next.js, Go, and Node.js to create event-driven microservices and cross-platform applications.",
-};
+}
 
-export const ABOUT_CONTENT = `Software Engineer specializing in React Native, Next.js, Go, and Node.js, building scalable fintech platforms, event-driven microservices, and cross-platform applications. Experienced in monorepo architectures and distributed systems. I design systems that are not only performant but also maintainable and secure.`;
+export const ABOUT_CONTENT = `Software Engineer specializing in React Native, Next.js, Go, and Node.js, building scalable fintech platforms, event-driven microservices, and cross-platform applications. Experienced in monorepo architectures and distributed systems. I design systems that are not only performant but also maintainable and secure.`
 
 export const SKILLS: SkillCategory[] = [
   {
@@ -59,7 +60,7 @@ export const SKILLS: SkillCategory[] = [
     icon: <Cpu className="w-6 h-6" />,
     skills: ["Docker", "Kubernetes", "Nx Monorepo", "CI/CD", "Sentry"],
   },
-];
+]
 
 export const EXPERIENCE: Experience[] = [
   {
@@ -86,7 +87,7 @@ export const EXPERIENCE: Experience[] = [
       "Implemented KYC user portal and admin dashboard with document verification workflows.",
     ],
   },
-];
+]
 
 export const PROJECTS: Project[] = [
   {
@@ -131,4 +132,4 @@ export const PROJECTS: Project[] = [
     repoUrl: "#",
     liveUrl: "#",
   },
-];
+]
