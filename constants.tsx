@@ -91,7 +91,7 @@ export const EXPERIENCE: Experience[] = [
 
 export const PROJECTS: Project[] = [
   {
-    id: "p1",
+    id: "p4",
     title: "Fypto Mobile App",
     description:
       "Cross-platform fintech mobile app for wallets, card lifecycle management, and real-time transactions with biometric auth.",
@@ -102,7 +102,7 @@ export const PROJECTS: Project[] = [
     featured: true,
   },
   {
-    id: "p2",
+    id: "p5",
     title: "Cloud-Native FinTech Platform",
     description:
       "Multi-service fintech monorepo with 7+ microservices for wallets, cards, payments, and KYC using event-driven architecture.",
@@ -113,7 +113,7 @@ export const PROJECTS: Project[] = [
     featured: true,
   },
   {
-    id: "p3",
+    id: "p6",
     title: "White-Label Platform Core",
     description:
       "Multi-tenant backend for branded platforms with tenant-level business logic and automated fee/commission engines.",
@@ -123,7 +123,7 @@ export const PROJECTS: Project[] = [
     liveUrl: "#",
   },
   {
-    id: "p4",
+    id: "p7",
     title: "Enterprise Dashboards",
     description:
       "High-performance dashboards for KYC approvals and financial monitoring with server-side pagination.",
@@ -131,5 +131,58 @@ export const PROJECTS: Project[] = [
     imageUrl: "/dashboard.jpg",
     repoUrl: "#",
     liveUrl: "#",
+  },
+  {
+    id: "p1",
+    title: "rp-blog",
+    description:
+      "Full-stack blogging platform with Google authentication, private/public post visibility, markdown editor with live preview, voting, comments, and searchable infinite public feed.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "NextAuth",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Zustand",
+    ],
+    imageUrl: "/char-min.png",
+    repoUrl: "#",
+    liveUrl: "#",
+    featured: true,
+  },
+  {
+    id: "p2",
+    title: "rp-paste",
+    description:
+      "Minimal Pastebin-style app that turns large text into short share links, enforces a 100KB size limit, auto-copies generated URLs, and serves raw paste content at `/p/[id]` with preserved formatting.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Tailwind CSS",
+    ],
+    imageUrl: "/dashboard.jpg",
+    repoUrl: "#",
+    liveUrl: "#",
+    featured: true,
+  },
+  {
+    id: "p3",
+    title: "rp-linked",
+    description:
+      "URL shortener supporting custom slugs and auto-generated slugs, strict URL/slug validation, reusable short links for existing targets, and fast 302 redirect routing from `/{slug}`.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "NanoID",
+      "Tailwind CSS",
+    ],
+    imageUrl: "/architecture.png",
+    repoUrl: "#",
+    liveUrl: "#",
+    featured: true,
   },
 ]
