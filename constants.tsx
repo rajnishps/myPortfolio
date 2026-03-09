@@ -185,4 +185,21 @@ export const PROJECTS: Project[] = [
     liveUrl: "https://link.rajnish.tech",
     featured: true,
   },
+  {
+    id: "p8",
+    title: "TOTP Generator",
+    description:
+      "Custom TOTP dashboard with QR preview, editable secrets, choice of digits, time window, and algorithm, plus automatic progress timing and clipboard copy-toasts.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "totp-generator",
+      "Custom UI Kit",
+    ],
+    imageUrl: "/totp-generator-cover.svg",
+    repoUrl: "#",
+    liveUrl: "#",
+    featured: true,
+  },
 ]

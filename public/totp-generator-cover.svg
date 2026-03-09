@@ -1,0 +1,53 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="100" x2="1520" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#03142f"/>
+      <stop offset="1" stop-color="#0c2a6b"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="220" y1="220" x2="1380" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0a1124"/>
+      <stop offset="1" stop-color="#111c44"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="520" y1="380" x2="1080" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06b6d4"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1300" cy="170" r="220" fill="#06b6d4" fill-opacity="0.15"/>
+  <circle cx="210" cy="830" r="260" fill="#2563eb" fill-opacity="0.12"/>
+
+  <rect x="220" y="200" width="1160" height="600" rx="34" fill="url(#panel)" stroke="#1d2d5e" stroke-width="2"/>
+  <text x="280" y="320" fill="#e0f2fe" font-family="ui-sans-serif, system-ui, sans-serif" font-size="60" font-weight="700">
+    totp-generator
+  </text>
+  <text x="280" y="370" fill="#93c5fd" font-family="ui-sans-serif, system-ui, sans-serif" font-size="28">
+    Live TOTP, QR preview, secret manager, copies codes instantly
+  </text>
+
+  <rect x="520" y="410" width="560" height="120" rx="26" fill="#020617" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="560" y="485" fill="#38bdf8" font-family="ui-monospace, Menlo, Monaco, Consolas, monospace" font-size="42" letter-spacing="0.15em">
+    739 241 82
+  </text>
+
+  <rect x="520" y="560" width="360" height="36" rx="18" fill="url(#accent)"/>
+  <text x="540" y="588" fill="#031527" font-family="ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="700">
+    23s remaining
+  </text>
+
+  <rect x="520" y="620" width="540" height="38" rx="19" fill="#0f172a" stroke="#1e3a8a" stroke-width="2"/>
+  <rect x="530" y="628" width="200" height="22" rx="11" fill="#131a2e"/>
+  <rect x="530" y="660" width="280" height="22" rx="11" fill="#131a2e"/>
+
+  <rect x="520" y="720" width="560" height="140" rx="24" fill="#0a1124" stroke="#1e3a8a" stroke-width="2"/>
+  <text x="540" y="760" fill="#bfdbfe" font-family="ui-sans-serif, system-ui, sans-serif" font-size="26">
+    Algorithms
+  </text>
+  <text x="540" y="795" fill="#c7d2fe" font-family="ui-monospace, Menlo, Monaco, Consolas, monospace" font-size="24">
+    SHA-1 · SHA-256 · SHA-512
+  </text>
+  <text x="540" y="830" fill="#c7d2fe" font-family="ui-monospace, Menlo, Monaco, Consolas, monospace" font-size="24">
+    6 digits · 30s / 60s
+  </text>
+</svg>
