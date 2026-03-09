@@ -1,0 +1,45 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="90" x2="1510" y2="910" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="380" y1="330" x2="1230" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#EF4444"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="260" cy="170" r="210" fill="#F59E0B" fill-opacity="0.11"/>
+  <circle cx="1360" cy="830" r="260" fill="#EF4444" fill-opacity="0.11"/>
+
+  <rect x="170" y="150" width="1260" height="700" rx="34" fill="#0B1220" stroke="#374151" stroke-width="2"/>
+  <text x="230" y="320" fill="#F9FAFB" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="74" font-weight="700">Cloud-Native FinTech Platform</text>
+  <text x="230" y="378" fill="#FDE68A" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="30">Event-driven microservices for wallets, cards, payments, and KYC</text>
+
+  <rect x="230" y="440" width="1140" height="340" rx="24" fill="#0F172A" stroke="#374151"/>
+
+  <rect x="280" y="500" width="180" height="86" rx="14" fill="#1F2937" stroke="#F59E0B"/>
+  <text x="320" y="552" fill="#FCD34D" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="26" font-weight="700">Wallet</text>
+
+  <rect x="520" y="500" width="180" height="86" rx="14" fill="#1F2937" stroke="#F59E0B"/>
+  <text x="572" y="552" fill="#FCD34D" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="26" font-weight="700">Cards</text>
+
+  <rect x="760" y="500" width="180" height="86" rx="14" fill="#1F2937" stroke="#F59E0B"/>
+  <text x="795" y="552" fill="#FCD34D" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="26" font-weight="700">KYC</text>
+
+  <rect x="1000" y="500" width="180" height="86" rx="14" fill="#1F2937" stroke="#F59E0B"/>
+  <text x="1024" y="552" fill="#FCD34D" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="26" font-weight="700">Payments</text>
+
+  <rect x="520" y="650" width="420" height="90" rx="16" fill="url(#accent)"/>
+  <text x="590" y="705" fill="#431407" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="32" font-weight="700">EVENT BUS</text>
+
+  <path d="M460 543H520" stroke="#F59E0B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M700 543H760" stroke="#F59E0B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M940 543H1000" stroke="#F59E0B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M850 590V650" stroke="#F59E0B" stroke-width="8" stroke-linecap="round"/>
+
+  <rect x="1220" y="218" width="120" height="48" rx="24" fill="#EF4444"/>
+  <text x="1242" y="250" fill="#450A0A" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="700">7+</text>
+</svg>
