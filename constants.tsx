@@ -199,7 +199,7 @@ export const PROJECTS: Project[] = [
     ],
     imageUrl: "/totp-generator-cover.svg",
     repoUrl: "#",
-    liveUrl: "#",
+    liveUrl: "https://totp.rajnish.tech",
     featured: true,
   },
 ]
