@@ -4,86 +4,134 @@ import { EXPERIENCE } from "../constants";
 import { motion } from "framer-motion";
 
 const Experience: React.FC = () => {
+  const startYears = EXPERIENCE.map((item) =>
+    Number.parseInt(item.period.split("-")[0].trim(), 10),
+  ).filter((year) => !Number.isNaN(year));
+
+  const earliestYear = startYears.length
+    ? Math.min(...startYears)
+    : new Date().getFullYear();
+
+  const yearsExperience = Math.max(
+    1,
+    new Date().getFullYear() - earliestYear + 1,
+  );
+
+  const tones = [
+    {
+      dot: "bg-cyan-300 shadow-[0_0_22px_rgba(34,211,238,0.55)]",
+      badge:
+        "bg-cyan-400/10 text-cyan-200 border-cyan-300/30",
+    },
+    {
+      dot: "bg-violet-300 shadow-[0_0_22px_rgba(167,139,250,0.55)]",
+      badge:
+        "bg-violet-400/10 text-violet-200 border-violet-300/30",
+    },
+    {
+      dot: "bg-emerald-300 shadow-[0_0_22px_rgba(52,211,153,0.5)]",
+      badge:
+        "bg-emerald-400/10 text-emerald-200 border-emerald-300/30",
+    },
+  ];
+
   return (
-    <Section id="experience" className="bg-background py-24 md:py-32">
-      <div className="mb-24 text-center">
-        <h2 className="text-4xl md:text-7xl font-display font-extrabold text-white mb-8 tracking-tight">
-          Career{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-            Journey
+    <Section id="experience" className="relative overflow-hidden bg-background py-24 md:py-32">
+      <div className="pointer-events-none absolute -top-24 left-4 h-72 w-72 rounded-full bg-primary/15 blur-3xl" />
+      <div className="pointer-events-none absolute bottom-0 right-10 h-64 w-64 rounded-full bg-secondary/10 blur-3xl" />
+
+      <div className="mb-14 md:mb-20 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+        <div className="max-w-3xl">
+          <span className="inline-flex items-center rounded-full border border-white/15 bg-white/[0.03] px-4 py-1.5 text-xs font-semibold tracking-[0.2em] text-gray-300">
+            PROFESSIONAL PATH
           </span>
-        </h2>
-        <p className="text-gray-400 text-xl font-sans max-w-2xl mx-auto">
-          Over 4 years of experience building scalable products and leading
-          engineering initiatives.
-        </p>
+          <h2 className="mt-5 text-4xl md:text-7xl font-display font-extrabold text-white tracking-tight">
+            Career{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+              Journey
+            </span>
+          </h2>
+          <p className="mt-5 text-gray-400 text-xl font-sans leading-relaxed max-w-2xl">
+            Building scalable fintech and platform products across mobile, web,
+            and backend systems.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 gap-3 sm:gap-4">
+          <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4 min-w-[130px]">
+            <p className="text-xs uppercase tracking-[0.16em] text-gray-500">
+              Experience
+            </p>
+            <p className="mt-1 text-2xl font-display font-bold text-white">
+              {yearsExperience}+ yrs
+            </p>
+          </div>
+          <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4 min-w-[130px]">
+            <p className="text-xs uppercase tracking-[0.16em] text-gray-500">
+              Roles
+            </p>
+            <p className="mt-1 text-2xl font-display font-bold text-white">
+              {EXPERIENCE.length}
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div className="relative max-w-5xl mx-auto px-4">
-        {/* Vertical Line */}
-        <div className="absolute left-4 md:left-1/2 transform md:-translate-x-px h-full w-px bg-gradient-to-b from-transparent via-white/10 to-transparent" />
+      <div className="relative mx-auto max-w-5xl">
+        <div className="absolute left-[1.15rem] top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-white/20 to-transparent" />
 
-        <div className="space-y-24">
+        <div className="space-y-8">
           {EXPERIENCE.map((exp, index) => (
             <motion.div
               key={exp.id}
+              className="relative pl-12 md:pl-16"
               initial={{ y: 30 }}
               whileInView={{ y: 0 }}
               transition={{
-                duration: 0.8,
+                duration: 0.65,
                 delay: index * 0.1,
                 ease: "easeOut",
               }}
               viewport={{ once: true }}
-              className={`relative flex flex-col md:flex-row gap-12 ${
-                index % 2 === 0 ? "md:flex-row-reverse" : ""
-              }`}
             >
-              {/* Timeline Dot */}
-              <div className="absolute left-0 md:left-1/2 w-3 h-3 rounded-full bg-white border-4 border-background transform -translate-x-[5.5px] md:-translate-x-1.2 mt-2.5 z-10 shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:scale-150 transition-transform duration-500" />
+              <div
+                className={`absolute left-3 top-9 h-3.5 w-3.5 -translate-x-1/2 rounded-full border-4 border-background z-10 ${tones[index % tones.length].dot}`}
+              />
 
-              {/* Content */}
-              <div className="ml-8 md:ml-0 md:w-1/2">
-                <div
-                  className={`glass-card p-8 group hover:border-primary/30 transition-all duration-500 ${
-                    index % 2 === 0 ? "md:text-left" : "md:text-right"
-                  }`}
-                >
-                  <div
-                    className={`flex flex-col ${index % 2 === 0 ? "md:items-start" : "md:items-end"} mb-6`}
-                  >
-                    <span className="px-4 py-1.5 rounded-full bg-white/5 text-white/60 text-xs font-black tracking-widest uppercase mb-4 border border-white/5">
-                      {exp.period}
+              <article className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8 shadow-[0_24px_60px_rgba(0,0,0,0.34)] transition-all duration-500 hover:-translate-y-1 hover:border-white/20">
+                <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                <div className="relative z-10">
+                  <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                    <div>
+                      <span
+                        className={`inline-flex items-center rounded-full border px-4 py-1.5 text-xs font-bold tracking-[0.2em] uppercase ${tones[index % tones.length].badge}`}
+                      >
+                        {exp.period}
+                      </span>
+                      <h3 className="mt-4 text-2xl md:text-3xl font-display font-bold text-white tracking-tight">
+                        {exp.role}
+                      </h3>
+                      <h4 className="mt-2 text-primary font-bold font-sans tracking-wide">
+                        {exp.company}
+                      </h4>
+                    </div>
+
+                    <span className="text-xs font-semibold tracking-[0.2em] text-gray-500">
+                      {String(index + 1).padStart(2, "0")}
                     </span>
-                    <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-2 tracking-tight">
-                      {exp.role}
-                    </h3>
-                    <h4 className="text-primary font-bold font-sans tracking-wide">
-                      {exp.company}
-                    </h4>
                   </div>
 
-                  <ul
-                    className={`space-y-4 text-gray-400 font-sans leading-relaxed text-sm ${
-                      index % 2 === 0 ? "md:items-start" : "md:items-end"
-                    } flex flex-col`}
-                  >
+                  <ul className="space-y-3 text-gray-300 font-sans leading-relaxed">
                     {exp.description.map((desc, i) => (
-                      <li key={i} className="relative pl-6 md:pl-0">
-                        <span
-                          className={`absolute left-0 top-2.5 w-1.5 h-1.5 rounded-full bg-primary/40 ${
-                            index % 2 === 0 ? "md:hidden" : "md:hidden"
-                          }`}
-                        />
-                        {desc}
+                      <li key={i} className="flex items-start gap-3 text-sm md:text-[0.95rem]">
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary/60" />
+                        <span>{desc}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-              </div>
-
-              {/* Empty Space for alignment */}
-              <div className="hidden md:block md:w-1/2" />
+              </article>
             </motion.div>
           ))}
         </div>
